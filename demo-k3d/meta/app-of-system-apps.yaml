@@ -8,8 +8,8 @@ spec:
     server: https://kubernetes.default.svc
     namespace: argocd
   source:
-    path: eks-sit-usea1-1/system-apps/app-of-system-apps
-    repoURL: https://votiro@dev.azure.com/votiro/Votiro/_git/gitops-dev
+    path: demo-k3d/system-apps/app-of-system-apps
+    repoURL: https://github.com/igalse/argocd-example-apps.git
     targetRevision: develop
     helm:
       releaseName: applications
