@@ -1,0 +1,21 @@
+
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: echoserver-demo
+  namespace: {{.Values.metadata.namespace}}
+spec:
+  destination:
+    namespace: echoserver-demo
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: {{ .Values.spec.source.sysAppPath }}/echoserver-demo
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
+
+  syncPolicy:
+      syncOptions:
+        - CreateNamespace=true
+
