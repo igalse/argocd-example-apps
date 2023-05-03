@@ -10,3 +10,7 @@ k -n argocd port-forward svc/argocd-server 8080:80
 https://github.com/igalse/argocd-example-apps.git
 
 
+k -n echoserver-demo port-forward svc/echoserver 8020:80
+k -n guestbook port-forward svc/guestbook-ui 8010:80
+
+
