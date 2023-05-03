@@ -7,5 +7,6 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o go-template='{{range
 
 k -n argocd port-forward svc/argocd-server 8080:80
 
+https://github.com/igalse/argocd-example-apps.git
 
 

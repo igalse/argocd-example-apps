@@ -6,4 +6,4 @@ spec:
   source:
     repoURL: https://github.com/igalse/argocd-example-apps.git
     targetRevision: develop
-    sysAppPath: eks-sit-usea1-1/system-apps
+    sysAppPath: demo-k3d/system-apps
